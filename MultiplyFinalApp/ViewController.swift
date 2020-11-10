@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Textfield1: UITextField!
+    @IBOutlet weak var Textfield2: UITextField!
+    
+    @IBOutlet weak var numberLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    @IBAction func ButtonWasPressed(_ sender: Any) {
+         let number1String = Textfield1.text!
+               let number2String = Textfield2.text!
+               
+               let number1 = Int(number1String)!
+               let number2 = Int(number2String)!
+               
+               let answer = number1 * number2
+               
+               numberLabel.text = "\(answer)"
+        view.endEditing(true)
+    }
+               }
+    
 
-}
 
