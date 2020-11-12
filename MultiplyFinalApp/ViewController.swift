@@ -31,7 +31,48 @@ class ViewController: UIViewController {
                numberLabel.text = "\(answer)"
         view.endEditing(true)
     }
-               }
+    
+    @IBAction func ButtonWasPressed1(_ sender: Any) {
+         let number1String = Textfield1.text!
+                      let number2String = Textfield2.text!
+                      
+                      let number1 = Int(number1String)!
+                      let number2 = Int(number2String)!
+                      
+                      let answer = number1 / number2
+                      
+                      numberLabel.text = "\(answer)"    }
+    @IBAction func ButtonWasPressed2(_ sender: Any) {
+         let number1String = Textfield1.text!
+                      let number2String = Textfield2.text!
+                      
+                      let number1 = Int(number1String)!
+                      let number2 = Int(number2String)!
+                      
+                      let answer = number1 + number2
+                      
+                      numberLabel.text = "\(answer)"    }
+    @IBAction func ButtonWasPressed3(_ sender: Any) { let number1String = Textfield1.text!
+                      let number2String = Textfield2.text!
+                      
+                      let number1 = Int(number1String)!
+                      let number2 = Int(number2String)!
+                      
+                      let answer = number1 - number2
+                      
+                      numberLabel.text = "\(answer)"
+    }
+    @IBAction func ButtonWasPressed4(_ sender: Any) {
+         let number1String = Textfield1.text!
+                      let number2String = Textfield2.text!
+                      
+                      let number1 = Int(number1String)!
+                      let number2 = Int(number2String)!
+                      
+                      let answer = number1 % number2
+                      
+                      numberLabel.text = "\(answer)"    }
+}
     
 
 
